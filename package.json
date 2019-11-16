@@ -8,7 +8,9 @@
     "build": "next build ./client",
     "start": "next start ./client",
     "type-check": "tsc",
-    "migrate": "truffle migrate"
+    "contracts:compile": "truffle compile",
+    "contracts:migrate": "truffle migrate --reset",
+    "contracts:test": "truffle test"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,7 @@
     "next": "^9.1.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "web3": "^1.2.4"
   }
 }
