@@ -1,11 +1,11 @@
 import React from 'react'
 import { NextPage } from 'next'
 
-import { Layout } from '../components'
+import { Layout, VotEth } from '../components'
 
 const Index: NextPage = () => (
   <Layout title="Vot.Eth">
-    <h1>Vot.Eth</h1>
+    <VotEth />
   </Layout>
 )
 

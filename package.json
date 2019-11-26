@@ -10,7 +10,8 @@
     "type-check": "tsc",
     "contracts:compile": "truffle compile",
     "contracts:migrate": "truffle migrate --reset",
-    "contracts:test": "truffle test"
+    "contracts:test": "truffle test",
+    "link": "cd client/web3 && ../../build/contracts contracts"
   },
   "repository": {
     "type": "git",
