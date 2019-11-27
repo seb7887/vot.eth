@@ -1,9 +1,11 @@
 import Web3 from 'web3'
 
-const resolveWeb3 = resolve => {
-  let { web3 } = window as any
+const resolveWeb3 = async resolve => {
+  let { web3, ethereum } = window as any
   const alreadyInjected = typeof web3 !== 'undefined' // i.e Mist/Metamask
   const localProvider = 'http://localhost:7545'
+
+  await ethereum.enable()
 
   if (alreadyInjected) {
     web3 = new Web3(web3.currentProvider)
